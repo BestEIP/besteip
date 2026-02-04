@@ -1,0 +1,252 @@
+﻿.field-validation-error {
+    color: #DD5A43;
+}
+
+.rnbtn {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    color: #333333 !important;
+    background-color: #ffffff !important;
+    text-shadow: none;
+}
+
+.logolink {
+    padding: 10px;
+}
+
+    .logolink > img {
+        max-width: 80px;
+        max-height: 40px;
+    }
+
+.rnbtn:hover {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.forpsda {
+    cursor: pointer;
+    text-decoration: none;
+    color: gray;
+}
+
+    .forpsda:hover {
+        color: #484848;
+    }
+
+.regirst {
+    position: absolute;
+    background-color: rgba(0,0,0,.2);
+    z-index: 1;
+    display: none;
+    width: 50%;
+    min-height: 100%;
+    opacity: 0;
+    top: 0;
+    overflow: auto;
+    height: 100%;
+}
+
+    .regirst.open {
+        display: block;
+        transition-delay: 0s;
+        width: 100%;
+        min-height: 100%;
+        opacity: 1;
+        position: fixed;
+    }
+
+.regirst-conect {
+    display: table;
+    margin: auto;
+    max-width: 800px;
+    background-color: #F1F1F1;
+    border-radius: 10px;
+    transition: all 200ms ease-out;
+    -moz-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    -o-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    transform: scale(0, 0);
+}
+
+    .regirst-conect.open {
+        -moz-transform: none;
+        -webkit-transform: none;
+        -o-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+
+#bs-example-navbar-collapse-1 a {
+    color: white;
+}
+
+    #bs-example-navbar-collapse-1 a:hover {
+        background-color: #706355;
+    }
+
+.intro-message {
+    padding-top: calc(8% - 0px);
+    padding-bottom: calc(0% - 0px);
+}
+
+#bs-example-navbar-collapse-1 a {
+    color: white;
+}
+
+    #bs-example-navbar-collapse-1 a:hover {
+        background-color: #706355;
+    }
+
+button#menu-toggler.display {
+    box-shadow: inset -1px -1px 5px 0px rgba(0,0,0,.2);
+    background-color: rgba(0,0,0,.05);
+}
+
+button {
+    outline: #7b42c5;
+}
+
+    button#menu-toggler {
+        left: 0;
+        color: cadetblue;
+        top: 0;
+        right: 0;
+        position: absolute;
+        border: none;
+        background: none;
+        padding: 5px;
+        margin: 10px;
+        border-radius: 5px;
+    }
+
+div#sidemenu > ul.menu-ul {
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .2s linear 0s,max-height 0s linear .2s;
+    -webkit-transition-timing-function: ease;
+}
+
+div#sidemenu.display > ul.menu-ul {
+    transform: scaleX(1);
+    transition: transform .2s linear 0s,max-height 0s linear .2s;
+    -webkit-transition-timing-function: ease;
+}
+
+ul.menu-ul {
+    list-style: none;
+    position: absolute;
+    margin: 0;
+    width: 150px;
+    background-color: rgb(99, 131, 112);
+    right: 0;
+    top: 10px;
+}
+
+    ul.menu-ul > li > a {
+        display: block;
+        font-size: 16px;
+        padding: 5px 10px;
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+        ul.menu-ul > li > a:hover {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+.display > .side-block {
+    width: 100%;
+    height: 100%;
+    /*background-color: #1e9296;*/
+    position: fixed;
+    display: block;
+    top: 0;
+}
+
+.intro-func {
+    border: #5ea7e6 3px solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+
+@media (max-width: 1400px) {
+    .intro-message {
+        padding-top: calc(9%);
+        padding-bottom: calc(10%);
+        font-size: smaller;
+    }
+}
+
+@media (min-width: 992px) {
+    .login-container {
+        max-width: 300px;
+        width: 100%;
+        margin-top: 40%;
+        padding-left: 20px;
+    }
+
+    .intro-header, .intro-header.yar {
+        min-height: 100%;
+    }
+
+    .sysintro {
+        background: rgba(0,0,0,0.5);
+        margin: 5% 0 0 0;
+    }
+
+    #logintitle {
+        background-color: #796759;
+    }
+
+    #loginbar {
+        /*display: none;*/
+        background-color: #796759 !important;
+    }
+
+    #menu-toggler, div#sidemenu.display > ul.menu-ul, .display > .side-block, .eip-login-sm-logo {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    footer {
+        padding: 20px 0;
+        background-color: rgba(255,255,255,0);
+    }
+
+    .eip-login-sm-logo {
+        display: block;
+    }
+
+    .intro-header, .intro-header.yar {
+        background: none;
+        min-height: auto;
+    }
+
+    #loginbar {
+        display: block:;
+    }
+
+    #logintitle {
+        background-color: #796759;
+    }
+
+    #loginbar {
+        background-color: #796759 !important;
+    }
+
+    body {
+        background: #dfe0e2 url(/Images/pattern.jpg) repeat;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .m-font-xxs {
+        font-size: xx-small;
+    }
+}
