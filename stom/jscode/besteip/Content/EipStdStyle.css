@@ -1,0 +1,17 @@
+
+div.Tokenize ul.Dropdown {
+  position: relative;
+}
+
+.tokenize-sample {
+	width: 100%;
+}
+
+div.Tokenize.Disabled ul.TokensContainer,
+div.Tokenize.Disabled ul.TokensContainer input {
+	cursor: default;
+}
+
+li.TokenSearch input[disabled] {
+	background-color: rgba(255, 255, 255, 0.15) !important;
+}
