@@ -1,0 +1,48 @@
+/* Base */
+
+.nav-item  {
+    font-size: 1.1rem !important;
+    }
+
+/* Underline From Center */
+.nav-underline-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.nav-underline-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.nav-underline-center:hover:before, .nav-underline-center:focus:before, .nav-underline-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+	
+/* Farmer */
+.textform {
+	#Position:absolute;
+	#top:100px;
+	background-color: #00000060;
+	padding: 10px;
+	width: fit-content;
+	font-size:14px;
+	color: white;
+}
+

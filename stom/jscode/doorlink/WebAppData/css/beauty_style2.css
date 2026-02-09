@@ -1,0 +1,88 @@
+
+.textbkb {
+	background-color: #00000060;
+	width: 20%;
+	min-width: 200px;
+}
+
+.left{
+	float: left;
+}
+
+.center{
+	margin: 0 auto;
+}
+
+.right{	
+	float: right;
+}
+
+.textbord {
+	background-color: #00000060;
+	width: 350px;
+	z-index: 1;
+	color: white;
+}
+
+
+@media (max-width:768px) {
+    .textbord {
+        display: none;
+    }
+	
+	.logo_title {
+		color:#212529;
+		font-size: 1rem;
+	}
+}
+
+.f-imgframe {  
+    height: 180px; /*can be anything*/
+	width: 100%;
+	object-fit:cover;
+    position: relative;
+}
+
+.f-imgorgsize {
+    width: 100%; 
+    margin: 0px;
+/*    height: 300px; 
+    border: 1px solid blue; */
+    overflow: hidden;
+    position: relative;
+/*    float: left; */
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.f-imghover {
+/*    height: 100%; */
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.f-imgorgsize:hover .f-imghover, .f-imgorgsize:focus .f-imghover {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.f-imgorgsize:hover .f-imghover:before, .f-imgorgsize:focus .f-imghover:before {
+    display: block;
+}
+
+.f-imgorgsize:hover a, .f-imgorgsize:focus a {
+    display: block;
+}
+
+.f-ptext {
+	font-size: 18px;
+}
